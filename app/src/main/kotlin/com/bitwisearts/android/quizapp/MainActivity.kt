@@ -9,7 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.ui.Modifier
-import com.bitwisearts.android.quizapp.ui.QuizView
+import com.bitwisearts.android.quizapp.ui.QuizViewGrid
 import com.bitwisearts.android.quizapp.ui.theme.QuizAppTheme
 
 /**
@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity()
 					modifier = Modifier.fillMaxSize(),
 					color = MaterialTheme.colorScheme.background)
 				{
-					QuizView(
+					QuizViewGrid(
 						calculateWindowSizeClass(this).heightSizeClass)
 				}
 			}

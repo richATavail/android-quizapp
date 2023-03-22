@@ -59,6 +59,7 @@ fun RowScope.AnswerCard(
 		modifier = Modifier
 			.padding(16.dp)
 			.weight(4f)
+			.aspectRatio(1f)
 			.fillMaxSize()
 			.background(Color(0xFFD9D8D9))
 			.clickable { onClickAction() }
